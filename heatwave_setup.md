@@ -31,7 +31,7 @@
   ![](images/04mysql01.png)
 
 2. **Create MySQL DB System** 클릭
-  <img src=./images/04mysql02.png>
+  ![](images/04mysql02.png)
 
 3. MySQL DB System 생성 dialog 에 다음의 정보 입력
     - Compartment 선택
