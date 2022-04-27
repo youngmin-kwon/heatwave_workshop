@@ -23,6 +23,9 @@ Oracle MySQL HeatWave는 고성능 인메모리 쿼리 가속기인 HeatWave가 
 
 * [## MySQL HeatWave 환경 구성](heatwave_setup.md)
 
-* [## MySQL HeatWave 성능 데모 및 AutoPilot 기능 데모](heatwave_demo.md)
+* [## MySQL HeatWave 성능 및 AutoPilot 데모 시나리오](heatwave_demo.md)
+
+* [## HeatWave ML 데모 시나리오](heatwave_ml.md)
+
 
 
