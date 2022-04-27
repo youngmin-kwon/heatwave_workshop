@@ -28,7 +28,7 @@
 ### 1.2. Create MySQL Database for HeatWave (DB System) instance
 
 1. Navigation Menu -> Databases -> MySQL DB Systems
-  <img src=./images/04mysql01.png>
+  ![](images/04mysql01.png)
 
 2. **Create MySQL DB System** 클릭
   <img src=./images/04mysql02.png>
@@ -52,12 +52,12 @@
     - Configure Backup : `Enable Automatic Backup` 선택 안함
     - Review and **Create** 클릭
   
-    <img src=./images/04mysql09-3.png>
+    ![](images/04mysql09-3.png)
 
 4. 생성 완료 MySQL DB Systems 정보 페이지의 **Endpoint** 정보에서 **Private IP Address** 정보 확인
     - Private IP Address = **10.1.1.136**
 
-    <img src=./images/04mysql10.png>
+    ![](images/04mysql10.png)
 
 
 ### 1.3. Add a HeatWave Cluster to MDS-HW MySQL Database System
@@ -67,29 +67,29 @@
 2. **MDS-HW** 선택 
 
 3. MDS-HW Detail Page -> More Action -> **Add HeatWave Cluster**
-  <img src=./images/10addheat02.png>
+  ![](images/10addheat02.png)
 
 4. `Add HeatWave Cluster` 페이지 
     - Shape : **MySQL.HeatWave.VM.Standard.E3**
     - Node Count : **2**
     - `Add HeatWave Cluster` 클릭
 
-    <img src=./images/10addheat06.png>
+    ![](images/10addheat06.png)
 
 5. MySQL Database System 정보 페이지에서 HeatWave Nodes Active 상태 확인
-  <img src=./images/10addheat07.png>
+  ![](images/10addheat07.png)
 
 만약, MySQL Database 에 기존에 데이터가 있는 상황이면, **Estimate Node Count** 를 클릭하여 **Auto Provisioning** 기능을 활용하여 
 노드 수를 예측할 수 있습니다.
 
-6. **Estimate Node Count** 클릭
-  <img src=./images/10addheat03.png>
+1. **Estimate Node Count** 클릭
+  ![](images/10addheat03.png)
 
 7. **Generate Estimate** 버튼을 클릭하여 HeatWave 메모리 사용량 예측 및 HeatWave Cluster 노드 수 예측
-  <img src=./images/10addheat04.png>
+  ![](images/10addheat04.png)
 
 8. HeatWave 에 로딩할 테이블들을 선택한 후 **Apply Node Count Estimate** 클릭
-  <img src=./images/10addheat05.png>
+  ![]images/10addheat05.png)
 
 
 ### 1.4. MySQL Client(Bastion Host) 용으로 사용할 Compute Instance 생성
@@ -259,7 +259,7 @@ https://www.mysql.com/products/workbench/ 페이지에서 MySQL Workbench dowonl
         + Default schema : airportdb
         + Test Connection 클릭 후 접속 확인
 
-    <img src=./images/workbench_connection.png>
+    ![](images/workbench_connection.png)
 
 - Query Timeout 방지를 위한 Preference 설정
     + MySQL Workbench 메뉴 -> Edit -> Preferences..
