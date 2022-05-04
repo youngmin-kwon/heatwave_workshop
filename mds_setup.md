@@ -2,7 +2,9 @@
 
 이 실습에서는 MySQL DB System을 생성하고 구성합니다.  MySQL Database Service를 생성하기 전 필요한 Virtual Cloud Network 환경 구성도 수행합니다.
 
-[TOC] 
+- [Lab 1 : MySQL Database Service 생성](#lab-1--mysql-database-service-생성)
+  - [Task 1 : Virtual Cloud Network 생성](#task-1--virtual-cloud-network-생성)
+  - [Task 2 :  Create MySQL Database for HeatWave (DB System) instance](#task-2---create-mysql-database-for-heatwave-db-system-instance)
 
 ## Task 1 : Virtual Cloud Network 생성
 
