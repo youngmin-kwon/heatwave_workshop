@@ -1,5 +1,12 @@
 # Lab 2 : MySQL Database Service 에 접속 및 데이터 로드
 
+- [Lab 2 : MySQL Database Service 에 접속 및 데이터 로드](#lab-2--mysql-database-service-에-접속-및-데이터-로드)
+  - [Task 1 : MySQL Client(Bastion Host) 용으로 사용할 Compute Instance 생성](#task-1--mysql-clientbastion-host-용으로-사용할-compute-instance-생성)
+  - [Task 2 : Compute Instance 환경 설정 및 MySQL Database Service 접속](#task-2--compute-instance-환경-설정-및-mysql-database-service-접속)
+  - [Task 3 : MySQL 로 데이터 로딩](#task-3--mysql-로-데이터-로딩)
+  - [(Optional) Task 4 : MySQL Workbench 설치 및 접속](#optional-task-4--mysql-workbench-설치-및-접속)
+
+
 MySQL 데이터베이스 서비스는 Private Subnet 에 구성하여 공용 인터넷에서 바로 접속할 수가 없습니다.  Bastion 호스트라고 하는 Compute Instance를 구성하여 MySQL 데이터베이스 서브스와 접속합니다.  이 Compute Instance Bastion Host는 Private 리소스와 Private Network에 대한 액세스가 필요한 엔드포인트 사이에 위치하며 SSH와 같은 프로토콜을 통해 프라이빗 리소스에 로그인할 수 있도록 하는 "점프 박스" 역할을 합니다.  이 Bastion Host 에서 MySQL DB 시스템과 연결하기 위한 클라이언트를 설치하여 DB를 접속합니다.
 
 MySQL DB 시스템에 접속 후 테스트 용 데이터를 로딩하는 작업을 수행합니다.

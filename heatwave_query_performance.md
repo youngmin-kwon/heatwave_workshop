@@ -1,5 +1,11 @@
 # Lab 4 : HeatWave로 데이터 로드 및 HeatWave 쿼리 성능 테스트
 
+- [Lab 4 : HeatWave로 데이터 로드 및 HeatWave 쿼리 성능 테스트](#lab-4--heatwave로-데이터-로드-및-heatwave-쿼리-성능-테스트)
+  - [Task 1 : MySQL Database Service 쿼리 테스트](#task-1--mysql-database-service-쿼리-테스트)
+  - [Task 2 : Loading Data to HeatWave Cluster](#task-2--loading-data-to-heatwave-cluster)
+  - [Task 3 : MySQL DB vs. HeatWave 쿼리 성능 테스트](#task-3--mysql-db-vs-heatwave-쿼리-성능-테스트)
+
+
 이번 랩에서는 HeatWave Cluster로 데이터를 로딩한 후 분석 쿼리 성능 향상을 확인합니다.
 
 ## Task 1 : MySQL Database Service 쿼리 테스트

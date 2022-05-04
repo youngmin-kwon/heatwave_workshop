@@ -1,5 +1,9 @@
 # Lab 3 : HeatWave Cluster 생성
 
+- [Lab 3 : HeatWave Cluster 생성](#lab-3--heatwave-cluster-생성)
+  - [Task 1 : Add a HeatWave Cluster to MDS-HW MySQL Database System](#task-1--add-a-heatwave-cluster-to-mds-hw-mysql-database-system)
+
+
 MySQL DB System 에 HeatWave Cluster 를 생성하는 방법을 살펴보겠습니다.
 
 

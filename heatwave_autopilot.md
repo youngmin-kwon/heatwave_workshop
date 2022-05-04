@@ -1,5 +1,9 @@
 # Lab 5 : AutoPilot 
 
+- [Lab 5 : AutoPilot](#lab-5--autopilot)
+  - [Task 1 : Autopilot - Auto Data Placement](#task-1--autopilot---auto-data-placement)
+
+
 ## Task 1 : Autopilot - Auto Data Placement
 
 HeatWave AutoPilot의 주요한 기능 중 하나인 Auto Data Plancement 기능에 대해 살펴보도록 하겠습니다.  

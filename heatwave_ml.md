@@ -1,5 +1,14 @@
 # Lab 6 :  HeatWave ML 
 
+- [Lab 6 :  HeatWave ML](#lab-6---heatwave-ml)
+  - [Task 1 : 데이터 로딩](#task-1--데이터-로딩)
+  - [Task 2 : 머신 러닝 테스트를 위한 DataSet 구성 - Train Data & Test Data](#task-2--머신-러닝-테스트를-위한-dataset-구성---train-data--test-data)
+  - [Task 3 : 머신 러닝 모델 학습 - Training Models](#task-3--머신-러닝-모델-학습---training-models)
+  - [Task 4 : 모델 스코어 확인](#task-4--모델-스코어-확인)
+  - [Task 5 : Row Prediction 및 Explanation](#task-5--row-prediction-및-explanation)
+  - [Task 6 : Table Predictions 및 Explanation](#task-6--table-predictions-및-explanation)
+
+
 사용자 정보 중 부가적인 정보를 기반으로 AFFINITY_CARD 발급 여부를 예측하는 머신 러닝 모델을 학습하고
 예측 및 예측 결과에 대한 설명 정보를 확인하는 테스트를 진행합니다.
 
