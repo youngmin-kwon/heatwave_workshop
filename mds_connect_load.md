@@ -11,8 +11,6 @@ MySQL 데이터베이스 서비스는 Private Subnet 에 구성하여 공용 인
 
 MySQL DB 시스템에 접속 후 테스트 용 데이터를 로딩하는 작업을 수행합니다.
 
-[TOC]
-
 ## Task 1 : MySQL Client(Bastion Host) 용으로 사용할 Compute Instance 생성
 
 1. Navigation Menu -> Compute Instances
@@ -67,23 +65,24 @@ Compute Instance 접속을 위한 PC Client 는 putty, PowerShell (Windows), ter
 3. [Cloud Shell] 에서 다음 수행 - Private Key 파일명은 테스트 환경에 맞게 수정합니다.
     
     ```
-    <copy>cp ssh-key-2022-05-02.key .ssh/</copy>
+    cp ssh-key-2022-05-02.key .ssh/
     ```
     ```
-    <copy>chmod 600 .ssh/ssh-key-2022-05-02.key</copy>
+    chmod 600 .ssh/ssh-key-2022-05-02.key
     ```
 
 4. MDS-Client Compute Instance 접속 :  
    `$ ssh -i .ssh/ssh-key-<date>.key opc@<your_compute_instance_public_ip>` 명령을 사용하여 MDS-Client Compute Instance에 접속합니다.
     ```
-    <copy>ssh -i .ssh/ssh-key-2022-05-02.key opc@146.56.167.33</copy>
+    ssh -i .ssh/ssh-key-2022-05-02.key opc@146.56.167.33
     ```
 
     ![](images/mdscon2-05.png)
 
 5. MySQL Shell Client 를 설치합니다.
+
     ```
-    <copy>sudo yum install mysql-shell -y</copy>
+    sudo yum install mysql-shell -y
     ```
 
     ![](images/mdscon2-06.png)
@@ -92,14 +91,14 @@ Compute Instance 접속을 위한 PC Client 는 putty, PowerShell (Windows), ter
     MySQL Database Service 상세 정보 페이지에서 Endpoint Private IP Address 정보 확인 (**10.0.1.251**)
 
     ```
-    <copy>mysqlsh -uadmin -p -h 10.0.1.251 --sql</copy>
+    mysqlsh -uadmin -p -h 10.0.1.251 --sql
     ```
+
     MySQL 접속 후 다음을 수행하여 정상접속 여부를 확인합니다.
+
     ```
-    <copy>
     show databases;
     \exit
-    </copy>
     ```
 
     ![](images/mdscon2-07.png)
@@ -143,25 +142,25 @@ Compute Instance 접속을 위한 PC Client 는 putty, PowerShell (Windows), ter
 1. 테스트 용 데이터 파일을 다운로드합니다.  Cloud Shell 에서 다음을 수행합니다.
 
     ```
-    <copy>
+    
     wget -O airportdb.zip https://bit.ly/3K4B5W5
     unzip airportdb.zip
     ls airportdb
-    </copy>
+    
     ```
 
     ![](images/mdscon2-08.png)
 
 2. MySQL Database Service 에 접속하여 압축 해제한 데이터 파일을 로딩합니다.
     ```
-    <copy>
+    
     mysqlsh --mysql admin@10.0.1.251 --js
     Password : Oracle#1234
-    </copy>
+    
     ```
     MySQL Shell Client에서 util.loadDump 를 수행합니다.
     ```
-    <copy>util.loadDump("/home/opc/airportdb", {dryRun: false, threads: 8, resetProgress:true, ignoreVersion:true})</copy>
+    util.loadDump("/home/opc/airportdb", {dryRun: false, threads: 8, resetProgress:true, ignoreVersion:true})
     ```
 
     ![](images/mdscon2-09.png)

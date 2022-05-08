@@ -25,7 +25,7 @@ MySQL Workbench 를 사용하여 테스트를 수행할 수 있습니다.
 
     혹은 Bastion Compute Instance 에 접속 후 `mysqlsh` 로 접속할 수 있습니다.
     ```
-    <copy>mysqlsh -uadmin -p -h 10.0.1.251 --sql</copy>
+    mysqlsh -uadmin -p -h 10.0.1.251 --sql
     ```
 
 2. 접속 후 다음의 SQL 을 수행하여 수행 시간을 확인합니다.  아래 쿼리는 월별 예약 건수 및 금액을 구하는 간단한 쿼리입니다.
